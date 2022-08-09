@@ -7,7 +7,7 @@ function App() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    faceio = new faceIO('fioa0d8f');
+    faceio = new faceIO(import.meta.env.VITE_FACEIOID);
   }, []);
 
   function enrollNewUser() {
