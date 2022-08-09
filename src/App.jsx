@@ -132,10 +132,12 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="h-100 d-flex justify-content-center align-items-center flex-column">
       <h1>Face Authentication by FaceIO</h1>
-      <button onClick={enrollNewUser}>Sign-in</button>
-      <button onClick={authenticateUser}>Log-in</button>
+      <div>
+        <button type="button" className='btn btn-secondary m-1' onClick={enrollNewUser}>Sign-in</button>
+        <button type="button" className='btn btn-secondary m-1' onClick={authenticateUser}>Log-in</button>
+      </div>
     </div>
   );
 }
